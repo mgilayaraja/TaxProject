@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxProject.Repository", "Ta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxProject.Utilities", "TaxProject.Utilities\TaxProject.Utilities.csproj", "{B8B4E15B-9B3C-42C9-81B9-A47905FB3103}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiProject", "WebApiProject\WebApiProject.csproj", "{4FB859DA-ECDB-4C56-B5ED-C88DEEF671E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B8B4E15B-9B3C-42C9-81B9-A47905FB3103}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8B4E15B-9B3C-42C9-81B9-A47905FB3103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8B4E15B-9B3C-42C9-81B9-A47905FB3103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB859DA-ECDB-4C56-B5ED-C88DEEF671E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB859DA-ECDB-4C56-B5ED-C88DEEF671E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB859DA-ECDB-4C56-B5ED-C88DEEF671E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB859DA-ECDB-4C56-B5ED-C88DEEF671E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

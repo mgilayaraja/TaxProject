@@ -17,6 +17,11 @@ namespace TaxProject.Service
         {
             this._userRepository = userRepository;
         }
+
+        public bool IsValidUser(string userName, string password)
+        {
+            return _userRepository.IsValidUser( userName,  password);
+        }
         public Users GetUsersDetailsByUserName(string userName)
         {
             return _userRepository.GetUsersDetailsByUserName(userName);

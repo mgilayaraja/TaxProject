@@ -9,6 +9,7 @@ namespace TaxProject.Core.IService
 {
     public interface IUserService
     {
+        bool IsValidUser(string userName, string password);
         Users GetUsersDetailsByUserName(string userName);
     }
 }

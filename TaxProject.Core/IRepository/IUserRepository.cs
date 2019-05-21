@@ -9,6 +9,7 @@ namespace TaxProject.Core.IRepository
 {
     public interface IUserRepository
     {
+        bool IsValidUser(string userName, string password);
         Users GetUsersDetailsByUserName(string userName);
     }
 }

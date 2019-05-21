@@ -11,7 +11,6 @@ namespace TaxProject.com
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            AutofacConfig.Initialize();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);

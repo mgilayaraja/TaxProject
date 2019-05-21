@@ -19,6 +19,7 @@ namespace TaxProject.Core.Models
         public string OTPNumber { get; set; }
         public string IPAddress { get; set; }
         public bool IsValidUser { get; set; }
+        public  decimal Salary { get; set; }
         public OperationStatus OperationStatus { get; set; }
     }
 }
