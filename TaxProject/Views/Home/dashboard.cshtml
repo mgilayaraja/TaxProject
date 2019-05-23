@@ -1,7 +1,36 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div class="sidenav">
+    <a href="/home/dashboard/" onclick="">About</a>
+    <a href="javascript:void(0);" onclick="GoService();">Services</a>
+    <a href="javascript:void(0);" onclick="GoClients();">Clients</a>
+    <a href="#">Contact</a>
+</div>
 
+<div class="table table-hover main" id="mailDiv">
+    <h2>Please click service menu</h2>
+</div>
+
+<div class="spinner-grow" id="loader" style="margin-left:200px; width: 7rem; height: 7rem;display:none;" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+
+<script type="text/javascript">
+    function GoService() {
+        $('#mailDiv').html('');
+        $('#loader').show();
+        $('#mailDiv').load("/home/Service/", function () {
+            $('#loader').hide();
+        });
+    }
+
+    function GoClients() {
+        $('#mailDiv').html('');
+        $('#loader').show();
+        $('#mailDiv').load("/home/Clients/", function () {
+            $('#loader').hide();
+        });
+    }
+</script>

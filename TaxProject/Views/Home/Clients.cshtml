@@ -1,0 +1,37 @@
+﻿@model List<TaxProject.Core.Models.Users>
+
+
+@if (Model != null && Model.Count > 0)
+{
+    <table>
+        <thead>
+            <tr style="background-color:coral">
+                <th>
+                   Client Name
+                </th>
+                <th>
+                    Phone Number
+                </th>
+                <th>
+                    Salary
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.EmailAddress
+                    </td>
+                    <td>
+                        @item.PhoneNumber
+                    </td>
+                    <td>
+                        @item.Salary
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
